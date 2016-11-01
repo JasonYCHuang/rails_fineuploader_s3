@@ -9,9 +9,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ["jasonych99"]
   spec.email         = ["jasonych99@gmail.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{Rails sever-side app for fineuploader-S3}
+  spec.description   = %q{When using fineuploader in Front-end, you need this gem to provide a correct signature.}
+  spec.homepage      = "https://github.com/JasonYCHuang/rails_fineuploader_s3"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
@@ -26,6 +26,10 @@ Gem::Specification.new do |spec|
   spec.bindir        = "exe"
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
+
+  spec.required_ruby_version = "~> 2.1"
+
+  spec.add_dependency "aws-sdk", "~> 2"
 
   spec.add_development_dependency "bundler", "~> 1.12"
   spec.add_development_dependency "rake", "~> 10.0"

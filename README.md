@@ -24,7 +24,10 @@ TBD
 
 ## Development
 
-TBD
+TODO:
+1. compile
+2. rspec
+3. doc
 
 ## Contributing
 
